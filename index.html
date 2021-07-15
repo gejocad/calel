@@ -32,11 +32,26 @@
     </div>
   </div>
 
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <h4>Registro de usuario</h4>
+      <p>Por favor ingrese sus datos:</p>
+    </div>
+    <div class="modal-footer">
+        <form action="" id="form" onsubmit="functionSubmit(event)">
+            <input type="email" placeholder="Correo electronico" id="correo" required>
+            <input type="password" placeholder="Contraseña" id="contraseña" required>
+        </br></br>  
+            <button id="" type="submit" onclick="login()" class="">Registrar</button>
+        </form>
+    </div>
+  </div>
+
   <!--  Final Modal -->
 
 <nav class="white lighten-1" role="navigation">
     <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"><img src="media/calendly.png" id="logo"></img></a>
-      <ul class="right hide-on-med-and-down">
+        <ul class="right hide-on-med-and-down">
             <!-- no tocar href ni clase  modal-trigger-->
           <li><a class="colordetextonegro">Particulares</a></li>
           <li><a class="colordetextonegro">Equipos</a></li>
@@ -44,22 +59,21 @@
           <li><a class="colordetextonegro">Precios</a></li>
           <li><a class="colordetextonegro">Recursos</a></li>
 
-          <li><a class="modal-trigger waves-effect waves-light btn-small blue" href="#modal1" id="usuario">Registrar</a></li>
-
       </ul>
       <ul id="nav-mobile" class="sidenav">
           <!-- no tocar href ni clase  modal-trigger-->
-        <li><a class="modal-trigger" href="#modal1">Registrar</a></li>
           <li><a >Particulares</a></li>
           <li><a >Equipos</a></li>
           <li><a >Productos</a></li>
           <li><a >Precios</a></li>
           <li><a >Recursos</a></li>
         </ul>
-        <a href="#" data-target="nav-mobile" class="sidenav-trigger"
-          ><i class="material-icons colordetextonegro">menu</i></a
-        >
-      </div>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <div>
+        <p class="right modal-trigger " href="#modal2">iniciar sesion</p>
+        <p class="right modal-trigger waves-effect waves-light btn-small blue" href="#modal1" id="usuario">Registrar</p>
+    </div>
+    </div>
     </nav>
 
     <!-- Hasta aqui -->
