@@ -18,80 +18,128 @@
   <!-- Modal Structure -->
   <div id="modal1" class="modal">
     <div class="modal-content">
-      <h5>Modal Header</h5>
-      <p>A bunch of text</p>
+      <h4>Registro de usuario</h4>
+      <p>Por favor ingrese sus datos:</p>
     </div>
     <div class="modal-footer">
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+        <form action="" id="form" onsubmit="functionSubmit(event)">
+            <input type="text" placeholder="Nombre completo" id="nombre" required>
+            <input type="email" placeholder="Correo electronico" id="correo" required>
+            <input type="password" placeholder="Contraseña" id="contraseña" required>
+        </br></br>  
+            <button id="" type="submit" onclick="captar()" class="">Registrar</button>
+        </form>
     </div>
   </div>
 
   <!--  Final Modal -->
 
-  <nav class="light-blue lighten-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
+  <nav class="white lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"><img src="media/calendly.png" id="logo"></img></a>
       <ul class="right hide-on-med-and-down">
             <!-- no tocar href ni clase  modal-trigger-->
-        <li><a class="modal-trigger" href="#modal1">Navbar Link</a></li>
+        <li><a class="modal-trigger colordetextonegro" href="#modal1">Registrar</a></li>
+        <li><a class="colordetextonegro">Particulares</a></li>
+          <li><a class="colordetextonegro">Equipos</a></li>
+          <li><a class="colordetextonegro">Productos</a></li>
+          <li><a class="colordetextonegro">Precios</a></li>
+          <li><a class="colordetextonegro">Recursos</a></li>
       </ul>
 
       <ul id="nav-mobile" class="sidenav">
           <!-- no tocar href ni clase  modal-trigger-->
-        <li><a class="modal-trigger" href="#modal1">Navbar Link</a></li>
-      </ul>
-      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-      
+        <li><a class="modal-trigger" href="#modal1">Registrar</a></li>
+          
+          <li><a >Particulares</a></li>
+          <li><a >Equipos</a></li>
+          <li><a >Productos</a></li>
+          <li><a >Precios</a></li>
+          <li><a >Recursos</a></li>
+        </ul>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"
+          ><i class="material-icons">menu</i></a
+        >
+        
+      </div>
+    </nav>
+
+    <!-- Hasta aqui -->
+    <div class="section no-pad-bot" id="index-banner">
+      <div class="container">
+        <br /><br />
+        <h1 class="header center orange-text">Starter Template</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">
+            A modern responsive front-end framework based on Material Design
+          </h5>
+        </div>
+        <div class="row center">
+          <a
+            href="http://materializecss.com/getting-started.html"
+            id="download-button"
+            class="btn-large waves-effect waves-light orange"
+            >Get Started</a
+          >
+        </div>
+        <br /><br />
+      </div>
     </div>
-  </nav>
-  <div class="section no-pad-bot" id="index-banner">
+
     <div class="container">
-      <br><br>
-      <h1 class="header center orange-text">Starter Template</h1>
-      <div class="row center">
-        <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-      </div>
-      <div class="row center">
-        <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">Get Started</a>
-      </div>
-      <br><br>
+      <div class="section">
+        <!--   Icon Section   -->
+        <div class="row">
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center light-blue-text">
+                <i class="material-icons">flash_on</i>
+              </h2>
+              <h5 class="center">Speeds up development</h5>
 
-    </div>
-  </div>
+              <p class="light">
+                We did most of the heavy lifting for you to provide a default
+                stylings that incorporate our custom components. Additionally,
+                we refined animations and transitions to provide a smoother
+                experience for developers.
+              </p>
+            </div>
+          </div>
 
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center light-blue-text">
+                <i class="material-icons">group</i>
+              </h2>
+              <h5 class="center">User Experience Focused</h5>
 
-  <div class="container">
-    <div class="section">
+              <p class="light">
+                By utilizing elements and principles of Material Design, we were
+                able to create a framework that incorporates components and
+                animations that provide more feedback to users. Additionally, a
+                single underlying responsive system across all platforms allow
+                for a more unified user experience.
+              </p>
+            </div>
+          </div>
 
-      <!--   Icon Section   -->
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center">Speeds up development</h5>
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center light-blue-text">
+                <i class="material-icons">settings</i>
+              </h2>
+              <h5 class="center">Easy to work with</h5>
 
-            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+              <p class="light">
+                We have provided detailed documentation as well as specific code
+                examples to help new users get started. We are also always open
+                to feedback and can answer any questions a user may have about
+                Materialize.
+              </p>
+            </div>
           </div>
         </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
-            <h5 class="center">User Experience Focused</h5>
-
-            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
-            <h5 class="center">Easy to work with</h5>
-
-            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
-          </div>
-        </div>
       </div>
-
+      <br /><br />
     </div>
     <br><br>
   </div>
@@ -102,7 +150,7 @@
 
       
       <div class="row center">
-           <img src="../img.png" class="" alt="">
+           <img src="./media/img.png" class="" alt="">
       </div>
 
     </div>
@@ -113,15 +161,15 @@
 
     <div class="col s4" style="width: 384px; height: 184px;">
       
-      <h5><img src="../number.png" alt=""> Cree sencillas reglas</h5>
+      <h5><img src="./media/number.png" alt=""> Cree sencillas reglas</h5>
        <p>Dígale a Calel cuáles son sus preferencias en cuanto a la disponibilidad y este hará el trabajao por usted</p>
     </div>
     <div class="col s4" style="width: 384px; height: 184px;">
-      <h5><img src="../number(2).png" alt=""> Comparte su enlace</h5>
+      <h5><img src="./media/number(2).png" alt=""> Comparte su enlace</h5>
       <p>Redirija a los invitados al elace de Calendly o intégrelo en sitios web.</p>
     </div>
     <div class="col s4" style="width: 384px; height: 184px;">
-      <h5><img src="../number (3).png" alt=""> Reciba reservas</h5>
+      <h5><img src="./media/number (3).png" alt=""> Reciba reservas</h5>
       <p>Cuando se elige una hora, el evento se añade en su calendario.</p>
     </div>
 
@@ -139,40 +187,52 @@
           <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
 
 
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
+    <footer class="page-footer orange">
       <div class="container">
-      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Company Bio</h5>
+            <p class="grey-text text-lighten-4">
+              We are a team of college students working on this project like
+              it's our full time job. Any amount would help support and continue
+              development on this project and is greatly appreciated.
+            </p>
+          </div>
+          <div class="col l3 s12">
+            <h5 class="white-text">Settings</h5>
+            <ul>
+              <li><a class="white-text" href="#!">Link 1</a></li>
+              <li><a class="white-text" href="#!">Link 2</a></li>
+              <li><a class="white-text" href="#!">Link 3</a></li>
+              <li><a class="white-text" href="#!">Link 4</a></li>
+            </ul>
+          </div>
+          <div class="col l3 s12">
+            <h5 class="white-text">Connect</h5>
+            <ul>
+              <li><a class="white-text" href="#!">Link 1</a></li>
+              <li><a class="white-text" href="#!">Link 2</a></li>
+              <li><a class="white-text" href="#!">Link 3</a></li>
+              <li><a class="white-text" href="#!">Link 4</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </div>
-  </footer>
+      <div class="footer-copyright">
+        <div class="container">
+          Made by
+          <a class="orange-text text-lighten-3" href="http://materializecss.com"
+            >Materialize</a
+          >
+        </div>
+      </div>
+    </footer>
 
-
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
-  <script src="js/script.js"></script>
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
