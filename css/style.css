@@ -19,3 +19,16 @@
 .colordetextonegro {
   color: black;
 }
+.btn{
+ background-color: black;
+ border-radius: 30px;
+ margin-top: 2px;
+ height: 45px;
+ 
+}
+#input{
+  border: 2px solid rgb(243, 240, 228);
+  border-radius: 30px;
+  margin-bottom: 5px;
+}
+
