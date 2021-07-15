@@ -5889,7 +5889,8 @@ body.keyboard-focused .dropdown-content li:focus {
 
 @media only screen and (max-width: 992px) {
   .modal {
-    width: 80%;
+    height: 350px;
+    width: 400px;
   }
 }
 
