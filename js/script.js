@@ -28,8 +28,7 @@ function captar(){
   function login(){
     let usuario = localStorage.getItem("nombre")
 
-      document.querySelector("#usuario").innerHTML = usuario;
-
-
+    if(usuario != "")
+    document.querySelector("#usuario").innerHTML = usuario;
   }
   login()
