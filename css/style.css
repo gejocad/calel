@@ -10,7 +10,12 @@
   padding: 0 15px;
 }
 .icon-block .material-icons {
-	font-size: inherit;
+  font-size: inherit;
 }
-
-
+#logo {
+  width: 170px;
+  height: 40px;
+}
+.colordetextonegro {
+  color: black;
+}

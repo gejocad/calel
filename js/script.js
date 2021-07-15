@@ -1,7 +1,3 @@
-  //Función prevent Default para cancelar los eventos por defecto
-  function functionSubmit(e){
-    e.preventDefault();
-  }
 
   //modal
   $(document).ready(function(){
@@ -19,10 +15,21 @@ function captar(){
    nombre = document.getElementById('nombre');
    correo = document.getElementById('correo');
    contraseña = document.getElementById('contraseña').value;
-   localStorage.setItem("nombre", nombre);
-   localStorage.setItem("correo", correo);
-   localStorage.setItem("contraseña", contraseña);
+   localStorage.setItem("nombre", nombre.value);
+   localStorage.setItem("correo", correo.value);
+   localStorage.setItem("contraseña", contraseña.value);
    window.location.href = "index.html";
-   
+  
    
 }
+
+
+
+  function login(){
+    let usuario = localStorage.getItem("nombre")
+
+      document.querySelector("#usuario").innerHTML = usuario;
+
+
+  }
+  login()
