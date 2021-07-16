@@ -38,11 +38,11 @@
       <p>Por favor ingrese sus datos:</p>
     </div>
     <div class="modal-footer">
-        <form action="" id="form" onsubmit="functionSubmit(event)">
-            <input type="email" placeholder="Correo electronico" id="correo" required>
-            <input type="password" placeholder="Contraseña" id="contraseña" required>
+        <form action="" id="form1" onsubmit="functionSubmit(event)">
+            <input type="email" placeholder="Correo electronico" id="correoIns" required>
+            <input type="password" placeholder="Contraseña" id="contraseñaIns" required>
         </br></br>  
-            <button id="" type="submit" onclick="login()" class="">Registrar</button>
+            <button type="submit" onclick="iniciar()" class="">Iniciar</button>
         </form>
     </div>
   </div>
@@ -72,7 +72,8 @@
       <div>
         <p class="right modal-trigger waves-effect waves-light btn-small blue" href="#modal2">iniciar sesion</p>
         <p class="right modal-trigger waves-effect waves-light btn-small blue" href="#modal1" id="usuario">Registrar</p>
-    </div>
+        <p id="csesion"></p>
+      </div>
     </div>
     </nav>
 
