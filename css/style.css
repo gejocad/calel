@@ -19,22 +19,14 @@
 .colordetextonegro {
   color: black;
 }
-<<<<<<< HEAD
-.containerS {
-  background-color: pink;
+.btn {
+  background-color: black;
+  border-radius: 30px;
+  margin-top: 2px;
+  height: 45px;
 }
-=======
-.btn{
- background-color: black;
- border-radius: 30px;
- margin-top: 2px;
- height: 45px;
- 
-}
-#input{
+#input {
   border: 2px solid rgb(243, 240, 228);
   border-radius: 30px;
   margin-bottom: 5px;
 }
-
->>>>>>> ee8cae27f0325873f1e5b25f00813bdd05029ad9
